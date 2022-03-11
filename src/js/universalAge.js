@@ -13,4 +13,10 @@ export default class UniversalAge {
     let venusConversion= this.earthAge * .62;
     this.venusAge = +venusConversion.toFixed(2);
   }
+
+  marsTime() {
+    let marsConversion= this.earthAge * 1.88;
+    this.marsAge = +marsConversion.toFixed(2);
+  }
+
 }
