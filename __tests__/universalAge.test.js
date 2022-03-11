@@ -1,10 +1,14 @@
 import UniversalAge from '../src/js/universalAge.js';
-
 describe('universalAge', () => {
 
 test('should correctly create a universalAge object with one attribute', () => {
     const testUniversalAge = new UniversalAge(24);
       expect(testUniversalAge.earthAge).toEqual(24);
+  });
+
+  test('should correctly calculate how many earth years equal a year on Mercury', ()=> {
+    const testUniversalAge= new UniversalAge(24;);
+      expect(testUniversalAge.mercuryAge()=5.76);
   });
 })
 
