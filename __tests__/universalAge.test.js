@@ -1,11 +1,15 @@
 import UniversalAge from '../src/js/universalAge.js';
 describe('universalAge', () => {
   let testUniversalAge;
-  beforeEach(()=>{testUniversalAge = new UniversalAge(24);
+  beforeEach(()=>{testUniversalAge = new UniversalAge(24, "male", "no", "healthy");
   });
 
 test('should correctly create a universalAge object with one attribute', () => {
       expect(testUniversalAge.earthAge).toEqual(24);
+      expect(testUniversalAge.gender).toEqual("male");
+      expect(testUniversalAge.smoker).toEqual("no");
+      expect(testUniversalAge.smoker).toEqual("healthy");
+      expect(testUniversalAge.lifeExpectency).toEqual(76);
   });
 
   test('should correctly calculate Mercury age based on earth age', ()=> {
