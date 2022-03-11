@@ -4,15 +4,13 @@ export default class UniversalAge {
     this.earthAge = earthAge
   };
 
-  mercuryAge() {
-    this.mercuryAge = this.earthAge * .24;
+  mercuryTime() {
+    let mercuryConversion = this.earthAge * .24;
+    this.mercuryAge = +mercuryConversion.toFixed(2);
   }
 
-  // heroStartingStats() { //FIND HOW TO CALL ON THIS FUNCTION AND SHOVE VALUES INTO A const hero = new LivingThing()
-  //   this.health = diceRoll() * 2
-  //   this.attackPower = diceRoll()
-  //   this.battleHealth = this.health
-  //   this.agility = diceRoll()
-  // };
-
+  venusTime() {
+    let venusConversion= this.earthAge * .62;
+    this.venusAge = +venusConversion.toFixed(2);
   }
+}
