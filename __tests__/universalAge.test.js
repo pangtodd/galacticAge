@@ -9,11 +9,17 @@ test('should correctly create a universalAge object with one attribute', () => {
   test('should correctly calculate Mercury age based on earth age', ()=> {
     const testUniversalAge= new UniversalAge(24);
     testUniversalAge.mercuryTime();
-      expect(testUniversalAge.mercuryAge=5.76);
+      expect(testUniversalAge.mercuryAge).toEqual(5.76);
   });
   test('should correct calculate Venus age based on earth age', ()=> {
     const testUniversalAge= new UniversalAge(24);
     testUniversalAge.venusTime();
-    expect(testUniversalAge.mercuryAge=666);
+    expect(testUniversalAge.venusAge).toEqual(14.88);
   });
+  test('should correct calculate Mars age based on earth age', ()=> {
+    const testUniversalAge= new UniversalAge(24);
+    testUniversalAge.marsTime();
+    expect(testUniversalAge.marsAge).toEqual(45.12);
+  });
+
 })
