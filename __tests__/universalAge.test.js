@@ -21,9 +21,9 @@ test('should correctly create a universalAge object with one attribute', () => {
     testUniversalAge.marsTime();
     expect(testUniversalAge.marsAge).toEqual(45.12);
   });
-  test('should correct calculate Mars age based on earth age', ()=> {
-    testUniversalAge.marsTime();
-    expect(testUniversalAge.marsAge).toEqual(45.12);
+  test('should correct calculate Jupiter age based on earth age', ()=> {
+    testUniversalAge.jupiterTime();
+    expect(testUniversalAge.jupiterAge).toEqual(45.12);
   });
 
 })
