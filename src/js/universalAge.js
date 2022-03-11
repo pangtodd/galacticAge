@@ -1,7 +1,11 @@
 
 export default class UniversalAge {
-  constructor(earthAge) {
+  constructor(earthAge, gender, smoker, lifeStyle, lifeExpectency) {
     this.earthAge = earthAge
+    this.gender = gender
+    this.smoker = smoker
+    this.lifeStyle= lifeStyle
+    this.lifeExpectency = 76
   };
 
   mercuryTime(ageValue) {
@@ -24,4 +28,15 @@ export default class UniversalAge {
     return +jupiterConversion.toFixed(2);
   }
 
+  lifeExpectency(){
+    if (this.gender === "woman") {
+      this.lifeExp = this.lifeExp + 5
+    }
+    if (this.smoker === "yes"){
+      let lifeExp = lifeExp - 10
+    }
+    if (this.lifestyle === "healty") {
+      let lifeExp = lifeExp + 7
+    }
+  }
 }
