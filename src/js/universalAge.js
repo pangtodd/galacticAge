@@ -19,4 +19,9 @@ export default class UniversalAge {
     this.marsAge = +marsConversion.toFixed(2);
   }
 
+  jupiterTime() {
+    let jupiterConversion= this.earthAge * 11.86;
+    this.jupiterAge = +jupiterConversion.toFixed(2);
+  }
+
 }
