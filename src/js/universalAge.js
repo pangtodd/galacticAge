@@ -4,24 +4,24 @@ export default class UniversalAge {
     this.earthAge = earthAge
   };
 
-  mercuryTime() {
-    let mercuryConversion = this.earthAge * .24;
-    this.mercuryAge = +mercuryConversion.toFixed(2);
+  mercuryTime(ageValue) {
+    let mercuryConversion = ageValue * .24;
+    return +mercuryConversion.toFixed(2);
   }
 
-  venusTime() {
-    let venusConversion= this.earthAge * .62;
-    this.venusAge = +venusConversion.toFixed(2);
+  venusTime(ageValue) {
+    let venusConversion= ageValue * .62;
+    return +venusConversion.toFixed(2);
   }
 
-  marsTime() {
-    let marsConversion= this.earthAge * 1.88;
-    this.marsAge = +marsConversion.toFixed(2);
+  marsTime(ageValue) {
+    let marsConversion= ageValue * 1.88;
+    return +marsConversion.toFixed(2);
   }
 
-  jupiterTime() {
-    let jupiterConversion= this.earthAge * 11.86;
-    this.jupiterAge = +jupiterConversion.toFixed(2);
+  jupiterTime(ageValue) {
+    let jupiterConversion= ageValue * 11.86;
+    return +jupiterConversion.toFixed(2);
   }
 
 }
