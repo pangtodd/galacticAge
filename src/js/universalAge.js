@@ -40,4 +40,13 @@ export default class UniversalAge {
     }
   }
 
+  timeLeft(){
+    let remainingTime = this.lifeExp - this.earthAge;
+    if (remainingTime<0) {
+      return Math.abs(remainingTime)+" years ago!";
+    } else {
+      return remainingTime;
+    }
+  }
+
 }
