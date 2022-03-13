@@ -33,8 +33,13 @@ This project assumes the user inputs will be age, gender, smoker/tobacco use sta
 ## Known Bugs
 
 * As of 3/12/22:
-* 
-* If you notice mistakes or bugs, please email pang.todd@gmail.com
+*   I get the following error after npm run build:
+
+    /Users/toddpang/Desktop/galaticAge/src/js/universalAge.js
+  3:52  error  'lifeExp' is defined but never used  no-unused-vars
+
+    I wanted to have a default value in all objects for the attribute "LifeExp", which starts at the national average life expetency, and then is adjusted based on user input. It doesn't like it, but I'm not sure how much of a problem it is.
+* If you notice other mistakes or bugs, please email pang.todd@gmail.com
 
 ## License
 
