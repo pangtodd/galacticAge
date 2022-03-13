@@ -19,13 +19,10 @@ $(document).ready(function() {
 
     $("#mercuryAge").append(newAge.mercuryTime(newAge.earthAge));
     $("#mercuryLeft").append(newAge.timeCheck(newAge.mercuryTime(newAge.earthTimeLeft)));
-
     $("#venusAge").append(newAge.venusTime(newAge.earthAge));
     $("#venusLeft").append(newAge.timeCheck(newAge.venusTime(newAge.earthTimeLeft)));
-
     $("#marsAge").append(newAge.marsTime(newAge.earthAge));
     $("#marsLeft").append(newAge.timeCheck(newAge.marsTime(newAge.earthTimeLeft)));
-
     $("#jupiterAge").append(newAge.jupiterTime(newAge.earthAge));
     $("#jupiterLeft").append(newAge.timeCheck(newAge.jupiterTime(newAge.earthTimeLeft)));
 
