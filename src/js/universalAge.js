@@ -1,12 +1,12 @@
 
 export default class UniversalAge {
   constructor(earthAge, gender, smoker, lifeStyle, lifeExp) {
-    this.earthAge = earthAge
-    this.gender = gender
-    this.smoker = smoker
-    this.lifeStyle= lifeStyle
-    this.lifeExp = 76
-  };
+    this.earthAge = earthAge;
+    this.gender = gender;
+    this.smoker = smoker;
+    this.lifeStyle= lifeStyle;
+    this.lifeExp = 76;
+  }
 
   mercuryTime(ageValue) {
     let mercuryConversion = ageValue * .24;
@@ -30,22 +30,25 @@ export default class UniversalAge {
 
   lifeExpectency(){
     if (this.gender === "female") {
-      this.lifeExp = this.lifeExp + 5
+      this.lifeExp = this.lifeExp + 5;
     }
     if (this.smoker === "yes"){
-      this.lifeExp = this.lifeExp - 10
+      this.lifeExp = this.lifeExp - 10;
     }
     if (this.lifeStyle === "healthy") {
-      this.lifeExp =this.lifeExp + 7
+      this.lifeExp =this.lifeExp + 7;
     }
   }
 
   timeLeft(){
-    let remainingTime = this.lifeExp - this.earthAge;
-    if (remainingTime<0) {
-      return Math.abs(remainingTime)+" years ago!";
+    this.earthTimeLeft = this.lifeExp - this.earthAge;
+  }
+
+  timeCheck(value){
+    if (value<0) {
+      return Math.abs(value)+" years ago!";
     } else {
-      return remainingTime;
+      return value;
     }
   }
 
