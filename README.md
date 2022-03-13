@@ -1,4 +1,4 @@
-#### Galactic Age
+# Galactic Age
 
 #### By Todd Pangilinan
 
