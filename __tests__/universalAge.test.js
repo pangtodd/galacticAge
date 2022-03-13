@@ -53,7 +53,7 @@ test('should correctly create a universalAge object with one attribute', () => {
     expect(noSmokeLazyLady.lifeExp).toEqual(81);
   });
 
-  test('should correct calculate time a person has left on earth based on life expetency calculation. If they have exceeded it, it will return that number.', ()=> {
+  test('should correct calculate time a person has left on earth based on life expetency calculation.', ()=> {
     let smokingLazyLady = new UniversalAge(80, "female", "yes", "no");
     testUniversalAge.lifeExpectency();
     smokingLazyLady.lifeExpectency();
@@ -63,12 +63,13 @@ test('should correctly create a universalAge object with one attribute', () => {
     expect(smokingLazyLady.earthTimeLeft).toEqual(-9)
   });
 
-  test('should correctly check value of remaining time left on a planet- if negative, change the number to a positive, and return the number with "years ago!"', ()=>{
+  test('should correctly check value of remaining time left on a planet- if negative, change the number to a positive, and return the number with "years ago!"', ()=> {
   let smokingLazyLady = new UniversalAge(80, "female", "yes", "no");
   smokingLazyLady.lifeExpectency();
+  testUniversalAge.lifeExpectency();
   smokingLazyLady.timeLeft();
-  console.log(smokingLazyLady)
+  testUniversalAge.timeLeft();
   expect(smokingLazyLady.timeCheck(smokingLazyLady.earthTimeLeft)).toEqual("9 years ago!")
+  expect(testUniversalAge.timeCheck(testUniversalAge.earthTimeLeft)).toEqual(59)
 });
-
 })
