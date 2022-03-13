@@ -32,7 +32,8 @@ This project assumes the user inputs will be age, gender, smoker/tobacco use sta
 
 ## Known Bugs
 
-* As of 3/12/22, no known bugs.
+* As of 3/12/22:
+* I got two errors when I ran npm run build:
 * If you notice mistakes or bugs, please email pang.todd@gmail.com
 
 ## License
