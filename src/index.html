@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Galactic Age</title>
+</head>
+<body>
+  <div class = "container">
+    <h1>Universal age calculator!</h1>
+    <p>Enter the information below to learn how old you would be on different planets...and how long you could expect to survive!</p>
+    <div id = input>
+      <form id ="userInfo">
+        <br>
+        <h3>Earth age</h3>
+        <div class="form-group">
+          <label for="userAge">what is your current age in years</label>
+          <input id="userAge" class="form-control" type="text">
+          <br>
+        </div>
+        <h3>gender</h3>
+        <p>this is used to estimate life expectency</p>
+        <select class="form-control" id="gender">
+          <option value="female">female</option>
+          <option value="male">male</option>
+          <option value="male">non-binary</option>
+        </select>
+        <br>
+        <h3>do you smoke or use tobacco?</h3>
+        <select class="form-control" id="tobacco">
+          <option value="yes">Yes</option>
+          <option value="no">no</option>
+        </select>
+        <br>
+        <h3>do you have healty lifestyle?</h3>
+        <select class="form-control" id="lifeStyle">
+          <option value="healthy">Yes, I regularly exercise, eat well, and monitor my health</option>
+          <option value="no">Not so much.</option>
+        </select>
+        <br>
+        <button type="submit" class="btn">results</button>
+      </div>
+      <div id="output">
+        <h1>Mercury</h1>
+        <h3>current age: <span id="mercuryAge"></span></h3>
+        <h3 id="mercuryLeft">how long you have left on Mercury: </h3>
+        <br>
+        <h1>Venus</h1>
+        <h3 id="venusAge">current age: </h3>
+        <h3 id="venusLeft">how long you have left on Venus: </h3>
+        <br>
+        <h1>Mars</h1>
+        <h3 id="marsAge">current age: </h3>
+        <h3 id="marsLeft">how long you have left on Mars: </h3>
+        <br>
+        <h1>Jupiter</h1>
+        <h3 id="jupiterAge">current age: </h3>
+        <h3 id="jupiterLeft">how long you have left on Jupiter: </h3>
+        <br>
+      </div>
+  </div>
+</html>
